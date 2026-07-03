@@ -7,6 +7,7 @@ const DashboardLayout = () => {
     return (
         <div className='flex'>
             <Sidebar />
+            <Topbar />
             <main className='ml-60 flex-1'>
                 <Outlet />
             </main>
