@@ -14,12 +14,13 @@ const Navbar = () => {
                     <img
                         src={logo}
                         alt="TabMarko"
-                        className='h-12 w-12'
+                        className='h-15 w-15'
                     />
-
-                    <span className='text-2xl font-bold text-[#191c1d]'>
-                        TabMarko
-                    </span>
+                    
+                    <h1 className='text-3xl font-bold tracking-tight'>
+                        <span className='text-[#191c1d]'>Tab</span>
+                        <span className='text-[#1a73e8]'>Marko</span>
+                    </h1>
                 </Link>
 
                 {/* Navigation Links */}

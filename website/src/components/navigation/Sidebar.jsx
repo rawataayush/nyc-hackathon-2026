@@ -63,13 +63,12 @@ const bottomNavItems = [
     },
 ];
 
-
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     const linksClasses = ({ isActive }) =>
         `
         flex items-center 
         ${isSidebarOpen ? 'justfiy-start gap-3' : 'justify-center'}
-        rounded-lg px-3 py-2 transition-all duration-300
+        rounded-lg px-3 py-1 transition-all duration-300
         ${isActive
             ? "bg-[#e3e2e6] text-[#005bbf] font-semibold"
             : "text-[#414754] hover:bg-[#e3e2e6]"
@@ -78,7 +77,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
     return (
         <nav
-            className={`fixed left-0 top-0 z-40 flex flex-col h-screen border-r border-[#c1c6d6] bg-[#f3f4f5] px-4 py-8
+            className={`fixed left-0 top-0 z-40 flex flex-col h-screen border-r border-[#c1c6d6] bg-[#f3f4f5] px-4 py-5
                 transition-all duration-300
                 ${isSidebarOpen ? "w-60" : "w-20"}
             `}
@@ -87,9 +86,11 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                 } `}
             >
                 <div className='flex items-center overflow-hidden'>
-                    <img src={logo} alt="TabMarko" className="w-13 h-13 shrink-0" />
-                    <h1 className={`whitespace-norwrap font-semibold text-2xl text-[#191c1d] translate-all duration-300
-                    isSidebarOpen ? 'w-auto opacity-100' : 'w-0 opacity-0'}`}>TabMarko</h1>
+                    <img src={logo} alt="TabMarko" className="w-14 h-14 shrink-0" />
+                    <h1 className={`whitespace-norwrap font-bold text-3xl text-[#191c1d] translate-all duration-300
+                    isSidebarOpen ? 'w-auto opacity-100' : 'w-0 opacity-0'}`}>
+                        <span className='text-[#191c1d]'>Tab</span>
+                        <span className='text-[#1a73e8]'>Marko</span></h1>
                 </div>
             </div>
 
