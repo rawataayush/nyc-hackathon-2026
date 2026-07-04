@@ -1,5 +1,5 @@
-import ProblemCard from './ProblemCard'
-import problems from './ProblemData'
+import ProblemCard from './ProblemCard';
+import problems from './ProblemData';
 
 const ProblemSection = () => {
     return (
@@ -29,4 +29,4 @@ const ProblemSection = () => {
     )
 }
 
-export default ProblemSection
+export default ProblemSection;

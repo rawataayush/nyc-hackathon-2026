@@ -8,7 +8,7 @@ const About = () => {
             className='scroll-mt-20 px-6 py-24 lg:px-8'
         >
             <div className='mx-auto max-w-7xl'>
-                <div className='grid gap16 lg:grid-cols-2 lg:items-start'>
+                <div className='grid gap-16 lg:grid-cols-2 lg:items-start'>
 
                     {/* Left */}
                     <div>
@@ -42,8 +42,8 @@ const About = () => {
                     />
                 ))}
                 </div>
+                </div>
             </div>
-        </div>
         </section>
     );
 };

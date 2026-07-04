@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Topbar = ( { isSidebarOpen }) => {
     return (
         <header className={`fixed top-0 right-0 z-30 hidden h-16 items-center justify-between bg-[#f8f9fa] px-8 shadow-sm transition-all duration-200 md:flex
@@ -49,4 +47,4 @@ const Topbar = ( { isSidebarOpen }) => {
     )
 }
 
-export default Topbar
+export default Topbar;

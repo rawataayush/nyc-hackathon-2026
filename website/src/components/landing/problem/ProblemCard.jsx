@@ -1,4 +1,3 @@
-
 const ProblemCard = ( {icon, title}) => {
     return (
         <div className='flex flex-col gap-3 rounded-xl border border-[#c1c6d6] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-md'>

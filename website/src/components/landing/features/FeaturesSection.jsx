@@ -5,7 +5,7 @@ const FeaturesSection = () => {
     return (
         <section
             id='features'
-            className='scroll-mt-20 px-6 py-24 lg:px-8'
+            className='px-6 py-24 lg:px-8'
         >
             <div className='mx-auto max-w-7xl'>
                 <div className='mb-16 text-center'>
