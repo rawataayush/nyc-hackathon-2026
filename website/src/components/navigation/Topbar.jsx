@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Topbar = () => {
+const Topbar = ( { isSidebarOpen }) => {
     return (
-        <header className='fixed top-0 left-60 right-0 z-30 hidden h-16 w-[calc(100%-240px)] items-center justify-between bg-[#f8f9fa] px-8 shadow-sm transition-all duration-200 md:flex'>
+        <header className={`fixed top-0 right-0 z-30 hidden h-16 items-center justify-between bg-[#f8f9fa] px-8 shadow-sm transition-all duration-200 md:flex
+        ${isSidebarOpen ? 'left-60' : 'left-20'}`}>
             {/* Search */}
             <div className='flex w-64 items-center rounded-full border border-[#c1c6d6] bg-[#f3f4f5] px-4 py-2'>
                 <span className="material-symbols-outlined mr-2 text-[20px] text-[#727785]">

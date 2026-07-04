@@ -1,14 +1,25 @@
-import Sidebar  from '../components/layout/Sidebar';
-import React from 'react';
+import Sidebar  from '../components/navigation/Sidebar';
 import { Outlet } from 'react-router-dom';
-import Topbar from '../components/layout/Topbar';
+import Topbar from '../components/navigation/Topbar';
+import { useState } from 'react'
 
 const DashboardLayout = () => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
     return (
-        <div className='flex'>
-            <Sidebar />
-            <Topbar />
-            <main className='ml-60 flex-1'>
+        <div className='min-h-screen bg-background'>
+            <Sidebar 
+                isSidebarOpen={isSidebarOpen}
+                setIsSidebarOpen={setIsSidebarOpen}
+                />
+            <Topbar 
+                isSidebarOpen={isSidebarOpen}
+                setIsSidebarOpen={setIsSidebarOpen}
+            />
+            <main className={`pt-2 transition-all duration-300 ${
+                isSidebarOpen ? 'ml-20' : 'ml-0'
+                }`
+            }>
                 <Outlet />
             </main>
         </div>
