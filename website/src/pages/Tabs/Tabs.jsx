@@ -14,4 +14,4 @@ const Tabs = () => {
     )
 }
 
-export default Tabs
+export default Tabs;
