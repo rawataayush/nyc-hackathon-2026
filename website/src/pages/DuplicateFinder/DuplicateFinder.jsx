@@ -10,9 +10,8 @@ const DuplicateFinder = () => {
                 <DuplicateToolbar />
                 <DuplicateGrid />
             </div>
-
         </main>
     )
 }
 
-export default DuplicateFinder
+export default DuplicateFinder;

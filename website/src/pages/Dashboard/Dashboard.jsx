@@ -5,7 +5,7 @@ import RecentActivity from '../../components/dashboard/activity/RecentActivity'
 
 const Dashboard = () => {
     return (
-        <main className='ml-60 mt-16 p-8 pb-24'>
+        <main className='ml-40 mt-16 p-8 pb-24'>
             <div className='mx-auto max-w-7xl'>
                 <div className=' flex flex-col gap-8 lg:flex-row'>
                     <div className='flex flex-1 flex-col gap-8'>

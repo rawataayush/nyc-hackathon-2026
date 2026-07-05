@@ -1,7 +1,7 @@
 const AISuggestionsHeader = () => {
     return (
         <div className='mb-10'>
-            <h1 className='text-4xl font-bold text-[#191c1d]'>
+            <h1 className='text-3xl font-bold text-[#191c1d]'>
                 AI Suggestions
             </h1>
 

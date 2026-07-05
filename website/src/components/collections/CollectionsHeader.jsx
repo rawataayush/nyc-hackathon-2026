@@ -2,7 +2,7 @@ const CollectionsHeader = () => {
     return (
         <div className='mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between'>
             <div>
-                <h2 className='text-3xl font-semibold text-[#191c1d]'>
+                <h2 className='text-3xl font-bold text-[#191c1d]'>
                     Collections
                 </h2>
 

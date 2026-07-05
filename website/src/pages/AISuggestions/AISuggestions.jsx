@@ -3,7 +3,7 @@ import SuggestionGrid from '../../components/aiSuggestions/SuggestionGrid';
 
 const AISuggestions = () => {
     return (
-        <main className='ml-60 mt-16 min-h-screen p-8'>
+        <main className='ml-40 mt-16 min-h-screen p-8'>
             <div className='mx-auto max-w-7xl'>
                 <AISuggestionsHeader />
                 <SuggestionGrid />
