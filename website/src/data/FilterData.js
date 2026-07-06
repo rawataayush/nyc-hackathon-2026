@@ -1,9 +1,9 @@
-const filters = [
-    { id: 1, name: "All", active: true },
-    { id: 2, name: "Study" },
-    { id: 3, name: "Work" },
-    { id: 4, name: "Shopping" },
-    { id: 5, name: "Recently Opened" },
+const filters = [ 
+    {label: "All", value: "All"},  
+    {label: "Study", value: "Study"},  
+    {label: "Work", value: "Work"},  
+    {label: "Shopping", value: "Shopping"},  
+    {label: "Recently Opened", value: "Recently Opened"},
 ];
 
 export default filters;

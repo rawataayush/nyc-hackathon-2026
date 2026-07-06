@@ -1,6 +1,6 @@
-import KnowledgeWelcome from '../../components/knowledge/KnowledgeWelcome';
-import ChatInput from '../../components/knowledge/ChatInput';
-import ConversationSidebar from '../../components/knowledge/ConversationSidebar';
+import KnowledgeWelcome from '../../components/knowledgeBase/KnowledgeWelcome';
+import ChatInput from '../../components/knowledgeBase/ChatInput';
+import ConversationSidebar from '../../components/knowledgeBase/ConversationSidebar';
 
 const KnowledgeBase = () => {
     return (

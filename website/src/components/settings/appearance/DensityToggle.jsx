@@ -6,7 +6,7 @@ const DensityToggle = () => {
     const [density, setDensity] = useState('comfortable');
 
     return (
-        <div className="flex rounded-lg border border-[#c1c6d6] bg-[#f8fafc] p-1">
+        <div className="flex gap-1 rounded-lg border border-[#c1c6d6] bg-[#f8fafc] p-1.5">
             <button
                 onClick={()=> setDensity('comfortable')}
                 className={`rounded-md px-4 py-2 text-sm font-medium transition ${

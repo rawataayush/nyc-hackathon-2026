@@ -1,7 +1,6 @@
-import brokenLinks from '../../data/BrokenLinksData';
 import BrokenLinkRow from './BrokenLinkRow';
 
-const BrokenLinksTable = () => {
+const BrokenLinksTable = ({brokenLinks}) => {
     return (
         <div className="flex h-full flex-col overflow-hidden rounded-xl border border-[#c1c6d6] bg-white shadow-sm">
             {/* Header */}

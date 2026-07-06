@@ -1,7 +1,7 @@
 import SuggestionGrid from './SuggestionGrid';
 
 const KnowledgeWelcome = () => {
-  return (
+    return (
     <div className='flex h-full flex-col items-center justify-center px-6 text-center'>
             <div className='mb-3 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#E8F0FE]'>
                 <span className='material-symbols-outlined text-[32px] text-[#1A73E8] py-1'>
@@ -22,7 +22,7 @@ const KnowledgeWelcome = () => {
                 <SuggestionGrid />
             </div>
         </div>
-  )
+    )
 }
 
 export default KnowledgeWelcome;

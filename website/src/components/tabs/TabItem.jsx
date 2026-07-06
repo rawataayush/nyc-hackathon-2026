@@ -1,4 +1,9 @@
 const TabItem = ({tab}) => {
+    const handleOpen = () => {
+        const url = tab.url.startsWith("https") ? tab.url : `https://${tab.url}`;
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
+
     return (
         <div className='group flex cursor-pointer items-center justify-between rounded-lg p-2 transition-colors hover:bg-[#f3f4f5]'>
             <div className='flex items-center gap-3 overflow-hidden'>
@@ -32,7 +37,10 @@ const TabItem = ({tab}) => {
             </div>
 
             <div className='flex shrink-0 items-center gap-1 pl-2 opacity-0 transition-opacity group-hover:opacity-100'>
-                <button className='rounded p-1 hover:bg-[#e5e7eb]'>
+                <button 
+                    className='rounded p-1 hover:bg-[#e5e7eb]'
+                    onClick={handleOpen}
+                    >
                     <span className='material-symbols-outlined text-[18px]'>
                         open_in_new
                     </span>

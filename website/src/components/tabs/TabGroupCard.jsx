@@ -2,15 +2,12 @@ import { useState } from 'react';
 import TabItem from './TabItem';
 
 const TabGroupCard = ({group}) => {
-
     const [collapsed, setCollapsed] = useState(false);
 
-    const visibleTabs = collapsed ? [] : group.tabs.slice(0, 3);
-
-    const remainingTabs = group.hiddenTabs;
-
     return (
-        <div className='flex flex-col rounded-xl border border-[#c1c6d6] bg-white p-4 shadow-sm transition-all hover:shadow-md'>
+        <div className={`flex flex-col rounded-xl border border-[#c1c6d6] bg-white p-4 shadow-sm transition-all hover:shadow-md 
+                ${collapsed ? 'h-fit' : 'h-80'}`}
+        >
 
             {/* Header */}
             <div className='mb-4 flex items-start justify-between border-b border-[#ececec] pb-4'>
@@ -46,19 +43,16 @@ const TabGroupCard = ({group}) => {
             </div>
 
             {/* Tabs */}
-            <div className='flex-1 space-y-1'>
-                {visibleTabs.map(tab => (
-                    <TabItem 
-                        key={tab.id}
-                        tab={tab}
-                    />
-                ))}
-            </div>
-            {remainingTabs > 0 && !collapsed && (
-                <button className='mt-3 text-center text-sm font-medium text-[#1a73e8] hover:underline'>
-                    Show {remainingTabs} more tabs
-                </button>
-            )}
+            {!collapsed && (
+                <div className='mt-2 flex-1 space-y-1 overflow-y-auto max-h-72 pr-2'>
+                    {group.tabs.map(tab => (
+                        <TabItem 
+                            key={tab.id}
+                            tab={tab}
+                        />
+                    ))}
+                </div>
+            )} 
         </div>
     )
 }

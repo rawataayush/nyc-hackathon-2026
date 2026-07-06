@@ -1,19 +1,14 @@
-import filterData from '../../data/FilterData';
+import filters from '../../data/FilterData';
+import FilterChips from '../common/FilterChips/FilterChips';
 
-const FilterBar = () => {
+const FilterBar = ({selectedFilter, setSelectedFilter}) => {
     return (
-        <div className='mb-8 flex flex-wrap gap-2'>
-            {filterData.map((filter) => (
-                <button 
-                    key={filter.id}
-                    className={
-                        filter.active ? 'rounded-full px-4 py-1.5 text-sm font-medium transition-colors'
-                        : 'rounded-full bg-[#ececec] px-4 py-1.5 text-sm transition hover:bg-[#e3e26]'
-                        }
-                    >
-                        {filter.name}
-                    </button>
-            ))}
+        <div className='mb-7 pt-1'>
+            <FilterChips
+                filters={filters}
+                selectedFilter={selectedFilter}
+                onFilterChange={setSelectedFilter}
+            />
         </div>
     )
 }

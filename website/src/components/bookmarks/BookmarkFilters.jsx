@@ -1,25 +1,21 @@
-const filters = [
-    'All',
-    'Study',
-    'Development',
-    'Design',
-    'Learning',
-];
+import FilterChips from '../common/FilterChips/FilterChips';
 
-const BookmarkFilters = () => {
+const filters = [
+    {label:  "All", value: "All"},
+    {label:  "Study", value: "Study"}, 
+    {label:  "Development", value: "Development"}, 
+    {label:  "Design", value: "Design"},
+    {label:  "Learning", value: "Learning"} 
+]
+const BookmarkFilters = ({selectedFilter, setSelectedFilter}) => {
     return (
-        <div className='flex flex-wrap gap-3'>
-            {filters.map((filter, index) => (
-                <button
-                    key={filter}
-                    className={`rounded-full px-4 py-2 text-sm font-medium transition
-                        ${index === 0 ? 'bg-[#1A73E8] text-white' : 'bg-[#f3f4f5] text-[#191c1d] hover:bg-[#e3e2e6]'}
-                    `}
-                >
-                    {filter}
-                </button>
-            ))}
-        </div>
+        <>
+            <FilterChips
+                filters={filters}
+                selectedFilter={selectedFilter}
+                onFilterChange={setSelectedFilter}
+            />
+        </>
     )
 }
 

@@ -2,6 +2,7 @@ const tabGroups = [
     {
         id: 1,
         title: 'React Learning',
+        category: 'Study',
         totalTabs: 12,
         updatedAt: '5 mins ago',
         collapsed: false,
@@ -39,6 +40,7 @@ const tabGroups = [
     {
         id: 2,
         title: 'Q3 Marketing Plan',
+        category: 'Work',
         totalTabs: 5,
         updatedAt: '2 hours ago',
         collapsed: false,
