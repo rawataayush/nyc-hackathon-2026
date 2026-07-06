@@ -1,5 +1,5 @@
-import QuickActionButton from './QuickActionButton'
-import quickActionsData from './QuickActionsData'
+import QuickActionButton from './QuickActionButton';
+import quickActionsData from '../../../data/QuickActionsData';
 
 const QuickActions = () => {
     return (

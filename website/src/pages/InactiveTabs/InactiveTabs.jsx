@@ -2,7 +2,7 @@ import InactiveTabsHeader from '../../components/inactiveTabs/InactiveTabsHeader
 import InactiveSummaryCards from '../../components/inactiveTabs/InactiveSummaryCards';
 import InactiveTabSection from '../../components/inactiveTabs/InactiveTabSection';
 
-import inactiveTabsData from '../../components/inactiveTabs/InactiveTabsData';
+import inactiveTabsData from '../../data/InactiveTabsData';
 
 const InactiveTabs = () => {
     return (

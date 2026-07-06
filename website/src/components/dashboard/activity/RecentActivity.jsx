@@ -1,5 +1,5 @@
 import ActivityItem from './ActivityItem'
-import activityData from './ActivityData'
+import activityData from '../../../data/ActivityData'
 
 const RecentActivity = () => {
     return (

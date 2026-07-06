@@ -1,4 +1,4 @@
-import suggestions from './SuggestionsData';
+import suggestions from '../../data/knowledgePromptsData';
 import SuggestionCard from './SuggestionCard';
 
 const SuggestionGrid = () => {

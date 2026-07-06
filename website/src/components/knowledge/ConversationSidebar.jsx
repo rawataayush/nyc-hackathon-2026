@@ -1,4 +1,4 @@
-import conversations from './ConversationsData';
+import conversations from '../../data/ConversationsData';
 import ConversationItem from './ConversationItem';
 
 const ConversationSidebar = () => {

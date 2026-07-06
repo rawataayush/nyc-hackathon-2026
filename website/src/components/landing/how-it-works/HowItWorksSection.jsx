@@ -1,5 +1,5 @@
 import StepCard from './StepCard';
-import steps from  './StepsData';
+import steps from  '../../../data/StepsData';
 
 const HowItWorks = () => {
     return (

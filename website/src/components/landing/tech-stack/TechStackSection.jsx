@@ -1,5 +1,5 @@
 import TechBadge from './TechBadge';
-import techStack from './TechStackData';
+import techStack from '../../../data/TechStackData';
 
 const TechStackSection = () => {
     return (

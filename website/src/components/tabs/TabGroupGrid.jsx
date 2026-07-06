@@ -1,5 +1,5 @@
-import TabGroupCard from './TabGroupCard';
-import tabsGroup from './TabsData';
+import TabGroupCard from '../../data/TabsData';
+import tabsGroup from '../../data/TabsData';
 
 const TabGroupGrid = () => {
     return (

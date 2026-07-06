@@ -1,4 +1,4 @@
-import bookmarks from './BookmarksData';
+import bookmarks from '../../data/BookmarksData';
 import BookmarkList from './BookmarkList';
 import BookmarkHeader from './BookmarkHeader';
 

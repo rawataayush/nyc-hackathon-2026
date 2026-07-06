@@ -1,5 +1,5 @@
 import ProblemCard from './ProblemCard';
-import problems from './ProblemData';
+import problems from '../../../data/ProblemData';
 
 const ProblemSection = () => {
     return (

@@ -1,5 +1,5 @@
 import CollectionCard from './CollectionCard';
-import collections from './CollectionsData';
+import collections from '../../data/CollectionsData';
 
 const CollectionGrid = () => {
     return (

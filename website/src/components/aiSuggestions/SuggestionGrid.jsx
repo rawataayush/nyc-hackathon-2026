@@ -1,4 +1,4 @@
-import suggestions from './suggestionsData';
+import suggestions from '../../data/SuggestionsData';
 import SuggestionsCard from './SuggestionsCard';
 
 const SuggestionGrid = () => {

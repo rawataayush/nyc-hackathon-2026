@@ -1,5 +1,5 @@
 import FeatureCard from './FeatureCard';
-import features from './FeaturesData';
+import features from '../../../data/FeaturesData';
 
 const FeaturesSection = () => {
     return (

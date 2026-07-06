@@ -1,4 +1,4 @@
-import filterData from './FilterData';
+import filterData from '../../data/FilterData';
 
 const FilterBar = () => {
     return (

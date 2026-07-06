@@ -1,4 +1,4 @@
-import brokenLinks from './BrokenLinksData';
+import brokenLinks from '../../data/BrokenLinksData';
 import BrokenLinkRow from './BrokenLinkRow';
 
 const BrokenLinksTable = () => {

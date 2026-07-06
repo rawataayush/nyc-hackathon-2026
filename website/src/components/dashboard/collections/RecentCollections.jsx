@@ -1,5 +1,5 @@
-import CollectionCard from './CollectionCard'
-import collectionsData from './CollectionsData'
+import CollectionCard from './CollectionCard';
+import collectionsData from '../../../data/CollectionsData';
 
 const RecentCollections = () => {
     return (

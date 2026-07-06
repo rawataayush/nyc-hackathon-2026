@@ -1,5 +1,5 @@
 import OverviewCard from './OverviewCard'
-import overviewStats  from './OverviewData'
+import overviewStats  from '../../../data/OverviewData'
 
 
 const OverviewGrid = () => {

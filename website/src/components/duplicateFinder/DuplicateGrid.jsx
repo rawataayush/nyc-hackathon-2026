@@ -1,4 +1,4 @@
-import duplicateGroups from './DuplicateData';
+import duplicateGroups from '../../data/DuplicateData';
 import DuplicateCard from './DuplicateCard';
 
 const DuplicateGrid = () => {
