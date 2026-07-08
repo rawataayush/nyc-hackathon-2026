@@ -1,4 +1,4 @@
-// content.js — injected into http://localhost/* by manifest.json
+// content.js — injected into https://tabmarko-production.up.railway.app/* by manifest.json
 // Auto-fetches data from the extension and injects it into the page.
 
 console.log('[TabMarko content.js] Injected into page');

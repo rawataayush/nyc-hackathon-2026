@@ -49,7 +49,7 @@ browser.runtime.onMessage.addListener((message, sender) => {
           const { categoryCache = {} } = await browser.storage.local.get('categoryCache');
 
           const webTabs = tabs.filter(t =>
-            isWebTab(t.url) && !t.url.includes('localhost:5173')
+            isWebTab(t.url) && !t.url.includes('tabmarko-production.up.railway.app')
           );
 
           const result = webTabs.map(tab => ({
@@ -115,7 +115,7 @@ browser.runtime.onMessage.addListener((message, sender) => {
           const { categoryCache = {} } = await browser.storage.local.get('categoryCache');
 
           const webTabs = tabs.filter(t =>
-            isWebTab(t.url) && !t.url.includes('localhost:5173')
+            isWebTab(t.url) && !t.url.includes('tabmarko-production.up.railway.app')
           );
           const windows = new Set(tabs.map(t => t.windowId)).size;
 

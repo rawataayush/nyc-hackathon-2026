@@ -27,12 +27,7 @@ const Topbar = () => {
 
             {/* Actions */}
             <div className='flex shrink-0 items-center gap-2 text-[#414754] sm:gap-3 lg:gap-4'>
-                <button
-                    type="button"
-                    className="flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-[#e1e3e4] hover:text-[#005bbf]"
-                >
-                    <span className="material-symbols-outlined">notifications</span>
-                </button>
+
                 <button
                     type="button"
                     className="flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-[#e1e3e4] hover:text-[#005bbf]"
@@ -52,23 +47,7 @@ const Topbar = () => {
                     <span className="material-symbols-outlined theme-icon-light">light_mode</span>
                 </button>
 
-                <button
-                    type="button"
-                    className="flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-[#e1e3e4] hover:text-[#005bbf]"
-                    onClick={() => {
-                        window.postMessage({ type: 'TABMARKO_SYNC' }, '*');
-                    }}
-                    title="Sync with Extension"
-                >
-                    <span className="material-symbols-outlined">refresh</span>
-                </button>
 
-                <button
-                    type="button"
-                    className="flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-[#e1e3e4] hover:text-[#005bbf]"
-                >
-                    <span className="material-symbols-outlined">cloud_done</span>
-                </button>
             </div>
         </header>
     )

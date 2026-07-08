@@ -11,16 +11,16 @@ function normalizeTabUrl(url) {
 async function openOrReloadDashboard(path) {
   try {
     const allTabs = await browser.tabs.query({});
-    const match = allTabs.find(t => t.url && t.url.includes('localhost:5173'));
+    const match = allTabs.find(t => t.url && t.url.includes('tabmarko-production.up.railway.app'));
     if (match) {
       await browser.tabs.reload(match.id);
       await browser.tabs.update(match.id, { active: true });
     } else {
-      await browser.tabs.create({ url: `http://localhost:5173${path}` });
+      await browser.tabs.create({ url: `https://tabmarko-production.up.railway.app${path}` });
     }
   } catch (err) {
     console.error('Dashboard redirect failed:', err);
-    await browser.tabs.create({ url: `http://localhost:5173${path}` });
+    await browser.tabs.create({ url: `https://tabmarko-production.up.railway.app${path}` });
   }
 }
 
@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /* ── Navigation buttons ── */
     document.getElementById('btn-home').addEventListener('click', () => {
-      browser.tabs.create({ url: 'http://localhost:5173' });
+      browser.tabs.create({ url: 'https://tabmarko-production.up.railway.app' });
     });
 
     document.getElementById('btn-search-bookmark').addEventListener('click', () => {
-      browser.tabs.create({ url: 'http://localhost:5173/bookmarks' });
+      browser.tabs.create({ url: 'https://tabmarko-production.up.railway.app/bookmarks' });
     });
 
     /* ── Sync button (top bar) ── */
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const el = document.getElementById(id);
       if (el) {
         el.addEventListener('click', () => {
-          browser.tabs.create({ url: `http://localhost:5173${path}` });
+          browser.tabs.create({ url: `https://tabmarko-production.up.railway.app${path}` });
         });
       }
     });

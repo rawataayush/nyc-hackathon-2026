@@ -14,7 +14,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://localhost/*"],
+      "matches": ["https://tabmarko-production.up.railway.app/*"],
       "js": ["scripts/content.js"]
     }
   ],
